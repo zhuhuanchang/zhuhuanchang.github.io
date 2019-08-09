@@ -44,7 +44,6 @@ src/assets/js/**
 src/*.hot-update.*
 .happypack/**
 .cache-loader/**
-manifest.json
 
 
 
