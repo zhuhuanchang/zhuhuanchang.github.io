@@ -32,6 +32,10 @@
   </div>
   <canvas id="canvas" width="480" height="320"></canvas>
   <script>
+       document.addEventListener("WeixinJSBridgeReady", function () { 
+        document.getElementById('car_audio').play(); 
+        document.getElementById('video').play(); 
+    
     //访问用户媒体设备的兼容方法
     function getUserMedia(constraints, success, error) {
       if (navigator.mediaDevices.getUserMedia) {
@@ -78,6 +82,7 @@
     document.getElementById('capture').addEventListener('click', function () {
       context.drawImage(video, 0, 0, 480, 320);      
     })
+           }, false); 
   </script>
 </body>
 </html>
